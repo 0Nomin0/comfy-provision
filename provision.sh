@@ -35,6 +35,8 @@ NODES=(
     "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader"
     "https://github.com/teskor-hub/comfyui-teskors-utils"
     "https://github.com/plugcrypt/CRT-Nodes"
+    "https://github.com/evanspearman/ComfyMath"
+    
 )
 
 # === ФАЙЛЫ/МОДЕЛИ ===
@@ -107,7 +109,7 @@ function provisioning_start() {
 # === ТОЛЬКО ВИЗУАЛ (фон/стекло/логотип). НИЧЕГО НЕ ВЫРЕЗАЕМ (Manager/Menu/Search не трогаем) ===
 function provisioning_inject_xmode_visual_only() {
     export LOGO_URL="https://cdn.discordapp.com/attachments/1257389767662764167/1476663710004023296/123.webp?ex=69a1f1bf&is=69a0a03f&hm=f05d6763b439e7a8f457de889d6235733b15e720818d1226d99828c383f17972&"
-    export BG_URL="https://cdn.discordapp.com/attachments/1257389767662764167/1476670627279802530/D1BE0547-2E03-4D97-8B1D-9AE8052F37D3.png?ex=69a1f830&is=69a0a6b0&hm=4183e321b0a2489deeaec14496f3050ff2a66e37119493a6c856151fd87ccdeb&"
+    export BG_URL="https://cdn.discordapp.com/attachments/1257389767662764167/1476694800815362089/87299620-D169-414C-9E93-4BADC89A3779.png?ex=69a20eb4&is=69a0bd34&hm=3502eb0e91e8bceced8ad958172b8a33646585f9a62495e771c48deda84df4ac&"
 
     python -c '
 import os, site, re
