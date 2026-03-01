@@ -108,8 +108,8 @@ function provisioning_start() {
 
 # === ТОЛЬКО ВИЗУАЛ (фон/стекло/логотип). НИЧЕГО НЕ ВЫРЕЗАЕМ (Manager/Menu/Search не трогаем) ===
 function provisioning_inject_xmode_visual_only() {
-    export LOGO_URL="https://cdn.discordapp.com/attachments/1257389767662764167/1476663710004023296/123.webp?ex=69a1f1bf&is=69a0a03f&hm=f05d6763b439e7a8f457de889d6235733b15e720818d1226d99828c383f17972&"
-    export BG_URL="https://cdn.discordapp.com/attachments/1257389767662764167/1476694800815362089/87299620-D169-414C-9E93-4BADC89A3779.png?ex=69a20eb4&is=69a0bd34&hm=3502eb0e91e8bceced8ad958172b8a33646585f9a62495e771c48deda84df4ac&"
+    export LOGO_URL="https://cdn.discordapp.com/attachments/1348371166833934396/1477670384454336522/6E66E1BD-CE27-4A98-944D-8A51831BD3A1.png?ex=69a59b49&is=69a449c9&hm=8a0a59c3ecd63683c7980869ad866096e40c658b508ae7d13199e2729b4386eb&"
+    export BG_URL="https://cdn.discordapp.com/attachments/1348371166833934396/1477670174575427604/image.png?ex=69a59b17&is=69a44997&hm=487004865aa5a330daa7de1c167029c74d9dd9b0233d01e309a72f570f53e9da&"
 
     python -c '
 import os, site, re
