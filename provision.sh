@@ -19,22 +19,22 @@ echo "[INFO] License check disabled."
 # === СПИСКИ НОД ===
 # (Менеджер ЕСТЬ и будет ВИДЕН)
 NODES=(
-    "https://github.com/ltdrdata/ComfyUI-Manager"
-    "https://github.com/kijai/ComfyUI-WanVideoWrapper"
-    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
-    "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler"
-    "https://github.com/chflame163/ComfyUI_LayerStyle"
-    "https://github.com/rgthree/rgthree-comfy"
-    "https://github.com/yolain/ComfyUI-Easy-Use"
-    "https://github.com/kijai/ComfyUI-KJNodes"
-    "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
-    "https://github.com/kijai/ComfyUI-segment-anything-2"
-    "https://github.com/cubiq/ComfyUI_essentials"
-    "https://github.com/fq393/ComfyUI-ZMG-Nodes"
-    "https://github.com/kijai/ComfyUI-WanAnimatePreprocess"
-    "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader"
-    "https://github.com/teskor-hub/comfyui-teskors-utils"
-    "https://github.com/plugcrypt/CRT-Nodes"
+    "https://github.com/0Nomin0/ComfyUI-Manager"
+    "https://github.com/0Nomin0/ComfyUI-WanVideoWrapper"
+    "https://github.com/0Nomin0/ComfyUI-Impact-Pack"
+    "https://github.com/0Nomin0/ComfyUI-SeedVR2_VideoUpscaler"
+    "https://github.com/0Nomin0/ComfyUI_LayerStyle"
+    "https://github.com/0Nomin0/rgthree-comfy"
+    "https://github.com/0Nomin0/ComfyUI-Easy-Use"
+    "https://github.com/0Nomin0/ComfyUI-KJNodes"
+    "https://github.com/0Nomin0/ComfyUI-VideoHelperSuite"
+    "https://github.com/0Nomin0/ComfyUI-segment-anything-2"
+    "https://github.com/0Nomin0/ComfyUI_essentials"
+    "https://github.com/0Nomin0/ComfyUI-ZMG-Nodes"
+    "https://github.com/0Nomin0/ComfyUI-WanAnimatePreprocess"
+    "https://github.com/0Nomin0/ComfyUI_HuggingFace_Downloader"
+    "https://github.com/0Nomin0/comfyui-teskors-utils"
+    "https://github.com/0Nomin0/CRT-Nodes"
     "https://github.com/evanspearman/ComfyMath"
     
 )
@@ -109,7 +109,7 @@ function provisioning_start() {
 # === ТОЛЬКО ВИЗУАЛ (фон/стекло/логотип). НИЧЕГО НЕ ВЫРЕЗАЕМ (Manager/Menu/Search не трогаем) ===
 function provisioning_inject_xmode_visual_only() {
     export LOGO_URL="https://cdn.discordapp.com/attachments/1348371166833934396/1477670384454336522/6E66E1BD-CE27-4A98-944D-8A51831BD3A1.png?ex=69a59b49&is=69a449c9&hm=8a0a59c3ecd63683c7980869ad866096e40c658b508ae7d13199e2729b4386eb&"
-    export BG_URL="https://cdn.discordapp.com/attachments/1348371166833934396/1477670174575427604/image.png?ex=69a59b17&is=69a44997&hm=487004865aa5a330daa7de1c167029c74d9dd9b0233d01e309a72f570f53e9da&"
+    export BG_URL="https://raw.githubusercontent.com/0Nomin0/ComfyUI-WanVideoWrapper/9f5c273beb70a298fce8b4fd90284658de391b50/87299620-D169-414C-9E93-4BADC89A3779.png"
 
     python -c '
 import os, site, re
