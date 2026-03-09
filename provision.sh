@@ -19,67 +19,40 @@ echo "[INFO] License check disabled."
 # === СПИСКИ НОД ===
 # (Менеджер ЕСТЬ и будет ВИДЕН)
 NODES=(
-    "https://github.com/0Nomin0/ComfyUI-Manager"
-    "https://github.com/0Nomin0/ComfyUI-WanVideoWrapper"
-    "https://github.com/0Nomin0/ComfyUI-Impact-Pack"
-    "https://github.com/0Nomin0/ComfyUI-SeedVR2_VideoUpscaler"
-    "https://github.com/0Nomin0/ComfyUI_LayerStyle"
-    "https://github.com/0Nomin0/rgthree-comfy"
-    "https://github.com/0Nomin0/ComfyUI-Easy-Use"
-    "https://github.com/0Nomin0/ComfyUI-KJNodes"
-    "https://github.com/0Nomin0/ComfyUI-VideoHelperSuite"
-    "https://github.com/0Nomin0/ComfyUI-segment-anything-2"
-    "https://github.com/0Nomin0/ComfyUI_essentials"
-    "https://github.com/0Nomin0/ComfyUI-ZMG-Nodes"
-    "https://github.com/0Nomin0/ComfyUI-WanAnimatePreprocess"
-    "https://github.com/0Nomin0/ComfyUI_HuggingFace_Downloader"
-    "https://github.com/0Nomin0/comfyui-teskors-utils"
-    "https://github.com/0Nomin0/CRT-Nodes"
-    "https://github.com/evanspearman/ComfyMath"
-    
+    "https://github.com/ltdrdata/ComfyUI-Manager"
+    "https://github.com/kijai/ComfyUI-WanVideoWrapper"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler"
+    "https://github.com/chflame163/ComfyUI_LayerStyle"
+    "https://github.com/rgthree/rgthree-comfy"
+    "https://github.com/yolain/ComfyUI-Easy-Use"
+    "https://github.com/kijai/ComfyUI-KJNodes"
+    "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+    "https://github.com/kijai/ComfyUI-segment-anything-2"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/fq393/ComfyUI-ZMG-Nodes"
+    "https://github.com/kijai/ComfyUI-WanAnimatePreprocess"
+    "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader"
+    "https://github.com/teskor-hub/comfyui-teskors-utils.git"
+    "https://github.com/plugcrypt/CRT-Nodes"
 )
-
-# === ФАЙЛЫ/МОДЕЛИ ===
-WRAPER=(
-  "https://raw.githubusercontent.com/mytarssocial-sudo/auroshsatoshi/refs/heads/main/animator.json"
-)
-
-# (оставил как у тебя, но привёл к одному месту назначения)
-CLIP_MODELS=(
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/klip_vision.safetensors"
-)
-
-CLIP_VISION=(
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/klip_vision.safetensors"
-)
-
-TEXT_ENCODERS=(
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/text_enc.safetensors"
-)
-
-VAE_MODELS=(
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/vae.safetensors"
-)
-
-# ВАЖНО: у тебя раньше было DIFFUSION_MODELS (не было объявлено) + DEFFUSION (опечатка).
-# Я оставляю рабочее имя DIFFUSION_MODELS и кладу туда твой WanModel.
-DIFFUSION_MODELS=(
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanModel.safetensors"
-)
-
-DETECTION_MODELS=(
-  "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B/resolve/main/process_checkpoint/det/yolov10m.onnx"
-  "https://huggingface.co/Kijai/vitpose_comfy/resolve/main/onnx/vitpose_h_wholebody_data.bin"
-  "https://huggingface.co/Kijai/vitpose_comfy/resolve/main/onnx/vitpose_h_wholebody_model.onnx"
-)
-
-LORAS=(
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanFun.reworked.safetensors"
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/light.safetensors"
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanPusa.safetensors"
-  "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/wan.reworked.safetensors"
-  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_Uni3C_controlnet_fp16.safetensors"
-)
+WRAPER=("https://raw.githubusercontent.com/mytarssocial-sudo/auroshsatoshi/refs/heads/main/animator.json")
+CLIP_MODELS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/klip_vision.safetensors")
+CLIPS=("https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors")
+TEXT_ENCODERS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/text_enc.safetensors")
+UNET_MODELS=("https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors")
+VAE_MODELS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/vae.safetensors")
+DETECTION_MODELS=("https://huggingface.co/Wan-AI/Wan2.2-Animate-14B/resolve/main/process_checkpoint/det/yolov10m.onnx"
+"https://huggingface.co/Kijai/vitpose_comfy/resolve/main/onnx/vitpose_h_wholebody_data.bin"
+"https://huggingface.co/Kijai/vitpose_comfy/resolve/main/onnx/vitpose_h_wholebody_model.onnx")
+LORAS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanFun.reworked.safetensors"
+"https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/light.safetensors"
+"https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/light.safetensors"
+"https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanPusa.safetensors"
+"https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/wan.reworked.safetensors"
+"https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_Uni3C_controlnet_fp16.safetensors")
+CLIP_VISION=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/klip_vision.safetensors")
+DEFFUSION=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanModel.safetensors")
 
 ### ─────────────────────────────────────────────
 ### ФУНКЦИИ УСТАНОВКИ
