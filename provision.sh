@@ -53,7 +53,6 @@ DETECTION_MODELS=("https://huggingface.co/Wan-AI/Wan2.2-Animate-14B/resolve/main
 "https://huggingface.co/Kijai/vitpose_comfy/resolve/main/onnx/vitpose_h_wholebody_model.onnx")
 LORAS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanFun.reworked.safetensors"
 "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/light.safetensors"
-"https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/light.safetensors"
 "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/WanPusa.safetensors"
 "https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/wan.reworked.safetensors"
 "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_Uni3C_controlnet_fp16.safetensors")
