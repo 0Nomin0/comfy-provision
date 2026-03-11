@@ -40,7 +40,7 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
     "https://github.com/Smirnov75/ComfyUI-mxToolkit"
     "https://github.com/crystian/ComfyUI-Crystools"
-    "https://github.com/teskor-hub/comfyui-teskors-utils.git"
+    "https://github.com/teskor-hub/comfyui-teskors-utils"
 )
 WRAPER=("https://raw.githubusercontent.com/gaziko/valentin/refs/heads/main/animator.json")
 CLIP_MODELS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/klip_vision.safetensors")
