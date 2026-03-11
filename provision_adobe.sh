@@ -16,31 +16,30 @@ echo "[INFO] License/token checks disabled."
 
 # === СПИСКИ ПАКЕТОВ И МОДЕЛЕЙ ===
 NODES=(
-  "https://github.com/ltdrdata/ComfyUI-Manager"
-  "https://github.com/kijai/ComfyUI-WanVideoWrapper"
-  "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
-  "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
-  "https://github.com/chflame163/ComfyUI_LayerStyle"
-  "https://github.com/rgthree/rgthree-comfy"
-  "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler"
-  "https://github.com/cubiq/ComfyUI_essentials"
-  "https://github.com/ClownsharkBatwing/RES4LYF"
-  "https://github.com/chrisgoringe/cg-use-everywhere"
-  "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
-  "https://github.com/Smirnov75/ComfyUI-mxToolkit"
-  "https://github.com/TheLustriVA/ComfyUI-Image-Size-Tools"
-  "https://github.com/ZhiHui6/zhihui_nodes_comfyui"
-  "https://github.com/kijai/ComfyUI-KJNodes"
-  "https://github.com/crystian/ComfyUI-Crystools"
-  "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader"
-  "https://github.com/plugcrypt/CRT-Nodes"
-  "https://github.com/EllangoK/ComfyUI-post-processing-nodes"
-  "https://github.com/Fannovel16/comfyui_controlnet_aux"
-  "https://github.com/teskor-hub/comfyui-teskors-utils"
+    "https://github.com/ltdrdata/ComfyUI-Manager"
+    "https://github.com/kijai/ComfyUI-WanVideoWrapper"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/chflame163/ComfyUI_LayerStyle"
+    "https://github.com/rgthree/rgthree-comfy"
+    "https://github.com/yolain/ComfyUI-Easy-Use"
+    "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/ClownsharkBatwing/RES4LYF"
+    "https://github.com/chrisgoringe/cg-use-everywhere"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
+    "https://github.com/Smirnov75/ComfyUI-mxToolkit"
+    "https://github.com/TheLustriVA/ComfyUI-Image-Size-Tools"
+    "https://github.com/ZhiHui6/zhihui_nodes_comfyui"
+    "https://github.com/kijai/ComfyUI-KJNodes"
+    "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader"
+    "https://github.com/plugcrypt/CRT-Nodes"
+    "https://github.com/EllangoK/ComfyUI-post-processing-nodes"
+    "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/teskor-hub/comfyui-teskors-utils.git"
 )
-
-WRAPER=("https://raw.githubusercontent.com/mytarssocial-sudo/auroshsatoshi/refs/heads/main/xmode.json")
-
+WRAPER=("https://raw.githubusercontent.com/gaziko/valentin/refs/heads/main/x_mode.json")
 CLIP_MODELS=("https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors")
 CKPT_MODELS=("https://huggingface.co/cyberdelia/CyberRealisticPony/resolve/main/CyberRealisticPony_V15.0_FP32.safetensors")
 FUN_MODELS=("https://huggingface.co/arhiteector/zimage/resolve/main/Z-Image-Turbo-Fun-Controlnet-Union.safetensors")
@@ -51,85 +50,74 @@ DIFFUSION_MODELS=("https://huggingface.co/T5B/Z-Image-Turbo-FP8/resolve/main/z-i
 BBOX_0=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/face_yolov8s.pt")
 BBOX_1=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/femaleBodyDetection_yolo26.pt")
 BBOX_2=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/female_breast-v4.2.pt")
-
 BBOX_3=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/nipples_yolov8s.pt")
 BBOX_4=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/vagina-v4.2.pt")
 BBOX_5=("https://huggingface.co/gazsuv/xmode/resolve/main/assdetailer.pt")
+SAM_PTH=("https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/sams/sam_vit_b_01ec64.pth")
 BBOX_6=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/Eyeful_v2-Paired.pt")
 BBOX_7=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/Eyes.pt")
 BBOX_8=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/FacesV1.pt")
 BBOX_9=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/hand_yolov8s.pt")
-# FIX: blob -> resolve (иначе скачается HTML)
-BBOX_10=("https://huggingface.co/AunyMoons/loras-pack/resolve/main/foot-yolov8l.pt")
-
-SAM_PTH=("https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/sams/sam_vit_b_01ec64.pth")
-
+BBOX_10=("https://huggingface.co/AunyMoons/loras-pack/blob/main/foot-yolov8l.pt")
 QWEN3VL_1=(
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/added_tokens.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/chat_template.jinja"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/config.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/generation_config.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/merges.txt"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/model.safetensors.index.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/preprocessor_config.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/special_tokens_map.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/tokenizer.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/tokenizer_config.json"
-  "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/vocab.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/added_tokens.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/chat_template.jinja"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/config.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/generation_config.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/merges.txt"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/model.safetensors.index.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/preprocessor_config.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/special_tokens_map.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/tokenizer.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/tokenizer_config.json"
+    "https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/vocab.json"
 )
 QWEN3VL_2=("https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/model-00001-of-00002.safetensors")
 QWEN3VL_3=("https://huggingface.co/svjack/Qwen3-VL-4B-Instruct-heretic-7refusal/resolve/main/model-00002-of-00002.safetensors")
-
 UPSCALER_MODELS=("https://huggingface.co/gazsuv/pussydetectorv4/resolve/main/4xUltrasharp_4xUltrasharpV10.pt")
 
 ### ─────────────────────────────────────────────
 ### ФУНКЦИИ УСТАНОВКИ
 ### ─────────────────────────────────────────────
 
-function provisioning_start() {
-  provisioning_clone_comfyui
-  provisioning_install_base_reqs
-  provisioning_get_nodes
-  provisioning_apply_ui_design
+ function provisioning_start() {
+    provisioning_clone_comfyui
+    provisioning_install_base_reqs
+    provisioning_get_nodes
+    provisioning_inject_hardcore_security 
 
-  # workflow json
-  provisioning_get_files "${COMFYUI_DIR}/web"                        "${WRAPER[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/user/default/workflows"     "${WRAPER[@]}"
+    # ВАЖНО: Качаем wraperx.json прямо в папку web, чтобы кнопка могла его мгновенно получить
+    provisioning_get_files "${COMFYUI_DIR}/web"                       "${WRAPER[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/user/default/workflows"    "${WRAPER[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/clip"               "${CLIP_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/text_encoders"     "${TEXT_ENCODERS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/unet"               "${UNET_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/vae"                "${VAE_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ckpt"               "${CKPT_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/model_patches"      "${FUN_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/diffusion_models"   "${DIFFUSION_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_0[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_1[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_2[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_3[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_4[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_5[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_6[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_7[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_8[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_9[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"   "${BBOX_10[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/sams"               "${SAM_PTH[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/prompt_generator/Qwen3-VL-4B-Instruct-heretic-7refusal"   "${QWEN3VL_1[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/prompt_generator/Qwen3-VL-4B-Instruct-heretic-7refusal"   "${QWEN3VL_2[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/prompt_generator/Qwen3-VL-4B-Instruct-heretic-7refusal"   "${QWEN3VL_3[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/upscale_models"     "${UPSCALER_MODELS[@]}"
 
-  # models
-  provisioning_get_files "${COMFYUI_DIR}/models/clip"                "${CLIP_MODELS[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/text_encoders"       "${TEXT_ENCODERS[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/unet"                "${UNET_MODELS[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/vae"                 "${VAE_MODELS[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ckpt"                "${CKPT_MODELS[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/model_patches"       "${FUN_MODELS[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/diffusion_models"    "${DIFFUSION_MODELS[@]}"
-
-  # bbox / ultralytics
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_0[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_1[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_2[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_3[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_4[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_5[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_6[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_7[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_8[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_9[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/ultralytics/bbox"     "${BBOX_10[@]}"
-
-  # SAM
-  provisioning_get_files "${COMFYUI_DIR}/models/sams"                "${SAM_PTH[@]}"
-
-  # Prompt generator model files
-  provisioning_get_files "${COMFYUI_DIR}/models/prompt_generator/Qwen3-VL-4B-Instruct-heretic-7refusal" "${QWEN3VL_1[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/prompt_generator/Qwen3-VL-4B-Instruct-heretic-7refusal" "${QWEN3VL_2[@]}"
-  provisioning_get_files "${COMFYUI_DIR}/models/prompt_generator/Qwen3-VL-4B-Instruct-heretic-7refusal" "${QWEN3VL_3[@]}"
-
-  # upscaler
-  provisioning_get_files "${COMFYUI_DIR}/models/upscale_models"      "${UPSCALER_MODELS[@]}"
-
-  echo "Provisioning complete. Image will now start natively."
+	echo "====================================="
+	echo "====================================="
+	echo "======✅ сахурик настроил комфи.======="
+	echo "====================================="
+	echo "====================================="
 }
 
 # === UI DESIGN ONLY (NO LOCKDOWN) ===
