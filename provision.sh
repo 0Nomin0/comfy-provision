@@ -67,7 +67,7 @@ function provisioning_start() {
     provisioning_clone_comfyui
     provisioning_install_base_reqs
     provisioning_get_nodes
-    provisioning_inject_hardcore_security
+    provisioning_inject_xmode_visual_only
 
     # ВАЖНО: Качаем wraperx.json прямо в папку web, чтобы кнопка могла его мгновенно получить
     provisioning_get_files "${COMFYUI_DIR}/web"                       "${WRAPER[@]}"
