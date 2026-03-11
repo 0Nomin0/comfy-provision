@@ -33,7 +33,7 @@ NODES=(
     "https://github.com/fq393/ComfyUI-ZMG-Nodes"
     "https://github.com/kijai/ComfyUI-WanAnimatePreprocess"
     "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader"
-    "https://github.com/teskor-hub/comfyui-teskors-utils.git"
+    "https://github.com/teskor-hub/comfyui-teskors-utils"
     "https://github.com/plugcrypt/CRT-Nodes"
 )
 WRAPER=("https://raw.githubusercontent.com/mytarssocial-sudo/auroshsatoshi/refs/heads/main/animator.json")
