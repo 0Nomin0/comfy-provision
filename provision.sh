@@ -33,10 +33,16 @@ NODES=(
     "https://github.com/fq393/ComfyUI-ZMG-Nodes"
     "https://github.com/kijai/ComfyUI-WanAnimatePreprocess"
     "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader"
-    "https://github.com/teskor-hub/comfyui-teskors-utils"
     "https://github.com/plugcrypt/CRT-Nodes"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/ClownsharkBatwing/RES4LYF"
+    "https://github.com/chrisgoringe/cg-use-everywhere"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
+    "https://github.com/Smirnov75/ComfyUI-mxToolkit"
+    "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/teskor-hub/comfyui-teskors-utils.git"
 )
-WRAPER=("https://raw.githubusercontent.com/mytarssocial-sudo/auroshsatoshi/refs/heads/main/animator.json")
+WRAPER=("https://raw.githubusercontent.com/gaziko/valentin/refs/heads/main/animator.json")
 CLIP_MODELS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/klip_vision.safetensors")
 CLIPS=("https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors")
 TEXT_ENCODERS=("https://huggingface.co/wdsfdsdf/OFMHUB/resolve/main/text_enc.safetensors")
@@ -62,12 +68,11 @@ function provisioning_start() {
     provisioning_clone_comfyui
     provisioning_install_base_reqs
     provisioning_get_nodes
-    provisioning_inject_xmode_visual_only
+    provisioning_inject_hardcore_security
 
-    # ВАЖНО: Качаем wraper.json прямо в web + workflows
+    # ВАЖНО: Качаем wraperx.json прямо в папку web, чтобы кнопка могла его мгновенно получить
     provisioning_get_files "${COMFYUI_DIR}/web"                       "${WRAPER[@]}"
-    provisioning_get_files "${COMFYUI_DIR}/user/default/workflows"    "${WRAPER[@]}"
-
+	provisioning_get_files "${COMFYUI_DIR}/user/default/workflows"    "${WRAPER[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/clip"               "${CLIP_MODELS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/clip_vision"        "${CLIP_VISION[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/text_encoders"      "${TEXT_ENCODERS[@]}"
@@ -75,6 +80,7 @@ function provisioning_start() {
     provisioning_get_files "${COMFYUI_DIR}/models/diffusion_models"   "${DIFFUSION_MODELS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/detection"          "${DETECTION_MODELS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/loras"              "${LORAS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/diffusion_models"   "${DEFFUSION[@]}"
 
     echo "Газик настроил → Provisioning complete. Image will now start natively."
 }
