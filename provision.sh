@@ -76,7 +76,7 @@ function provisioning_start() {
     provisioning_get_files "${COMFYUI_DIR}/models/clip_vision"        "${CLIP_VISION[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/text_encoders"      "${TEXT_ENCODERS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/vae"                "${VAE_MODELS[@]}"
-    provisioning_get_files "${COMFYUI_DIR}/models/diffusion_models"   "${DIFFUSION_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/diffusion_models"   "${UNET_MODELS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/detection"          "${DETECTION_MODELS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/loras"              "${LORAS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/diffusion_models"   "${DEFFUSION[@]}"
