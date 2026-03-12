@@ -37,6 +37,7 @@ NODES=(
     "https://github.com/Smirnov75/ComfyUI-mxToolkit"
     "https://github.com/crystian/ComfyUI-Crystools"
     "https://github.com/teskor-hub/comfyui-teskors-utils.git"
+    "https://github.com/evanspearman/ComfyMath"
 )
 
 WRAPER=(
